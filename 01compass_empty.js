@@ -10,7 +10,10 @@ oriented = function(e) {
         
         if(compassHeading >315 || compassHeading < 45){
             text_area.textContent = "North, a pink piggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggg";
-                                   +"nnnnnnnnnn";
+            var c=document.getElementById("myCanvas");
+            var ctx=c.getContext("2d");
+            ctx.fillStyle="#FF0000";
+            ctx.fillRect(0,0,150,75);
         }
         if(compassHeading >45 && compassHeading < 135){
             text_area.textContent = "East, a yellow pig";
